@@ -17,11 +17,3 @@ message Product {
 message ProductID {
   string value = 1;
 }
-
-/*
-protoc -I ./proto --go_out=./server  \
-    --go-grpc_out=./server \
-    product_info.proto
-
--I es el import path, donde buscar los import que tiene dentro
- */
